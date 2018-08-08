@@ -95,6 +95,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.home_image_view:
+                //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home_selected);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
                 mMessageView.setBackgroundResource(R.drawable.comui_tab_message);
@@ -114,6 +115,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 break;
 
             case R.id.message_image_view:
+                //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
                 mMessageView.setBackgroundResource(R.drawable.comui_tab_message_selected);
@@ -133,6 +135,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 break;
 
             case R.id.mine_image_view:
+                //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
                 mMessageView.setBackgroundResource(R.drawable.comui_tab_message);
