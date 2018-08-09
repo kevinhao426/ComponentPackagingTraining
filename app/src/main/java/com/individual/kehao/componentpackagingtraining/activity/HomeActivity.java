@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.individual.kehao.componentpackagingtraining.R;
 import com.individual.kehao.componentpackagingtraining.activity.base.BaseActivity;
+import com.individual.kehao.componentpackagingtraining.utils.LogPrint;
 import com.individual.kehao.componentpackagingtraining.view.fragment.home.HomeFragment;
 import com.individual.kehao.componentpackagingtraining.view.fragment.home.MessageFragment;
 import com.individual.kehao.componentpackagingtraining.view.fragment.home.MineFragment;
@@ -70,6 +71,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         mMineView = findViewById(R.id.mine_image_view);
 
         mHomeView.setBackgroundResource(R.drawable.comui_tab_home_selected);
+        LogPrint.i("tag: finish init");
     }
 
     @Override
@@ -94,7 +96,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
         switch (view.getId()) {
-            case R.id.home_image_view:
+            case R.id.home_layout_view:
+                LogPrint.i("tag: 1");
                 //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home_selected);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
@@ -114,7 +117,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 }
                 break;
 
-            case R.id.message_image_view:
+            case R.id.message_layout_view:
+                LogPrint.i("tag: 2");
                 //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
@@ -134,7 +138,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 }
                 break;
 
-            case R.id.mine_image_view:
+            case R.id.mine_layout_view:
+                LogPrint.i("tag: 3");
                 //icon change
                 mHomeView.setBackgroundResource(R.drawable.comui_tab_home);
                 mPondView.setBackgroundResource(R.drawable.comui_tab_pond);
