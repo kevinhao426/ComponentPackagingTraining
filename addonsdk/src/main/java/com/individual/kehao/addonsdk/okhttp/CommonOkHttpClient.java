@@ -1,6 +1,7 @@
 package com.individual.kehao.addonsdk.okhttp;
 
 import com.individual.kehao.addonsdk.okhttp.https.HttpsUtils;
+import com.individual.kehao.addonsdk.okhttp.response.CommonJsonCallBack;
 
 import java.util.concurrent.TimeUnit;
 
@@ -53,7 +54,7 @@ public class CommonOkHttpClient {
      * @param commCallback
      * @return call
      */
-    public static Call sendRequest(Request request, Callback commCallback) {
+    public static Call sendRequest(Request request, CommonJsonCallBack commCallback) {
         Call call = okHttpClient.newCall(request);
         call.enqueue(commCallback);
         return call;
